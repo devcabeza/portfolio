@@ -1,12 +1,13 @@
 import cvEs from "@cv"
 import cvEn from "../../cv_english.json"
+import type { CV } from "../cv.d.ts"
 import { ui } from "./ui"
 
 // Añade aquí un idioma con su CV y sus textos en `ui.ts`.
 // Si solo quieres un idioma, deja únicamente el de `DEFAULT_LANG`.
 export const LANGUAGES = {
-  es: { name: "Español", cv: cvEs },
-  en: { name: "English", cv: cvEn },
+  es: { name: "Español", cv: cvEs as CV },
+  en: { name: "English", cv: cvEn as CV },
 }
 
 export type Lang = keyof typeof LANGUAGES
