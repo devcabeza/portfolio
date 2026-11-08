@@ -1,112 +1,84 @@
-
-
-<div align="center">
-<img src="logo.png" height="90px" width="auto" /> 
-<h2>
-    <em>Résumé</em> minimalista maquetado para web y pdf
-</h2>
-<p>
-Esquema del JSON de CV de <a href="https://jsonresume.org/schema/">jsonresume.org</a>
-</p>
-
-
-<p>
-Basado en el diseño de <a href="https://github.com/BartoszJarocki/cv">Bartosz Jarocki</a>
-
-</p>
-
-</div>
-
-<div align="center">
-    <a href="#🚀-empezar">
-        Empezar
-    </a>
-    <span>&nbsp;✦&nbsp;</span>
-    <a href="#🧞-comandos">
-        Comandos
-    </a>
-    <span>&nbsp;✦&nbsp;</span>
-    <a href="#🔑-licencia">
-        Licencia
-    </a>
-    <span>&nbsp;✦&nbsp;</span>
-    <a href="https://midu.dev">
-        Personal
-    </a>
-   
-</div>
-
-<p></p>
+# Alejandro Cabeza — Portfolio & CV
 
 <div align="center">
 
-![Astro Badge](https://img.shields.io/badge/Astro-BC52EE?logo=astro&logoColor=fff&style=flat)
-![GitHub stars](https://img.shields.io/github/stars/midudev/minimalist-portfolio-json)
-![GitHub issues](https://img.shields.io/github/issues/midudev/minimalist-portfolio-json)
-![GitHub forks](https://img.shields.io/github/forks/midudev/minimalist-portfolio-json)
-![GitHub PRs](https://img.shields.io/github/issues-pr/midudev/minimalist-portfolio-json)
+![Astro](https://img.shields.io/badge/Astro-7.4-BC52EE?logo=astro&logoColor=fff&style=flat)
+![TypeScript](https://img.shields.io/badge/TypeScript-6.0-3178C6?logo=typescript&logoColor=fff&style=flat)
+![License](https://img.shields.io/badge/License-MIT-green.svg?style=flat)
+
+**Portafolio web y currículum interactivo / imprimible** desarrollado con [Astro](https://astro.build/) y [TypeScript](https://www.typescriptlang.org/). Diseñado con enfoque minimalista, arquitectura estática ultraligera y datos desacoplados mediante esquemas estructurados ([JSON Resume](https://jsonresume.org/schema/)).
+
+[🌐 Sitio Web](https://alejandrocabezaoficial.dev) • [💼 LinkedIn](https://www.linkedin.com/in/alejandro-cabeza-ab86661bb/) • [🐙 GitHub](https://github.com/devcabeza)
 
 </div>
 
-<img src="portada.png"></img>
+---
 
-## 🛠️ Stack
+## ⚡ Características
 
-- [**Astro**](https://astro.build/) - El framework web de la nueva época.
-- [**Typescript**](https://www.typescriptlang.org/) - JavaScript con sintaxis de tipado.
-- [**HotKeyPad**](https://github.com/jesubohr/hotkeypad) - Paleta de comandos con atajos de teclado hecha en puro JavaScript.
-- [**Mona Sans**](https://github.com/github/mona-sans) - Tipografía variable, servida en local y recortada (`src/assets/fonts`).
+- **Rendimiento y Zero-JS por defecto**: Generación estática pura (SSG) con CSS crítico inyectado para evitar bloqueos de renderizado.
+- **Soporte Multi-idioma (i18n)**: Español como ruta raíz (`/`) e Inglés (`/en/`), alimentados por `cv.json` y `cv_english.json`.
+- **Paleta de Comandos**: Atajo global (`Cmd/Ctrl + K`) impulsado por [HotKeyPad](https://github.com/jesubohr/hotkeypad) para navegación rápida, redes sociales e impresión directa.
+- **Preparado para Impresión (PDF)**: Reglas `@media print` dedicadas que eliminan elementos interactivos para generar un CV físico o PDF de maquetación limpia.
+- **Tema Claro / Oscuro**: Detección de preferencia de sistema operativo con persistencia local.
 
+## 🛠️ Stack Tecnológico
 
-## 🚀 Empezar
+| Componente | Tecnología | Propósito |
+| :--- | :--- | :--- |
+| **Framework** | [Astro](https://astro.build/) | Generación estática, bundling y enrutamiento |
+| **Lenguaje** | [TypeScript](https://www.typescriptlang.org/) | Tipado estático y contratos para los esquemas del CV |
+| **Tipografía** | [Mona Sans](https://github.com/github/mona-sans) | Tipografía variable servida en local |
+| **Paleta UI** | [HotKeyPad](https://github.com/jesubohr/hotkeypad) | Manejo accesible de atajos de teclado |
 
-### 1. Usa este [repo](https://github.com/midudev/minimalist-portfolio-json) como _template_ de un proyecto de Astro
+## 🚀 Inicio Rápido
 
+### Requisitos
 
-- Necesitas [Node.js](https://nodejs.org/) 22.22 o superior.
-- Yo uso [pnpm](https://pnpm.io/installation) como gestor de dependencias y empaquetador.
+- [Node.js](https://nodejs.org/) v22+
+- Gestor de paquetes: `pnpm` (recomendado) o `npm`
 
-```bash
-# Instala pnpm
-npm install -g pnpm
+### Instalación y Desarrollo
 
-# Inicializa el proyecto
-pnpm create astro@latest -- --template midudev/minimalist-portfolio-json
-```
+1. **Clonar el repositorio:**
 
-### 2. Añade tu contenido:
-Edita el archivo `cv.json` para crear tu propio Portafolio/CV imprimible.
+   ```bash
+   git clone git@github.com:devcabeza/portfolio.git
+   cd portfolio
+   ```
 
-#### Idiomas
+2. **Instalar dependencias:**
 
-El portafolio se genera en español en `/` y en inglés en `/en/` (a partir de `cv_english.json`). Los idiomas se configuran en `src/i18n/index.ts` y los textos de la interfaz en `src/i18n/ui.ts`:
+   ```bash
+   pnpm install
+   ```
 
-- **Solo un idioma:** elimina `en` de `LANGUAGES` junto a su `import` y borra `cv_english.json`. El selector de idioma desaparece.
-- **Añadir un idioma:** crea su JSON (por ejemplo `cv_french.json`), impórtalo en `LANGUAGES` y añade sus textos en `ui.ts`.
-### 3. Lanza el servidor de desarrollo:
+3. **Iniciar el servidor local:**
 
-```bash
-# Disfruta del resultado
-pnpm dev
-```
+   ```bash
+   pnpm dev
+   ```
 
+   El sitio estará disponible en [http://localhost:4321](http://localhost:4321).
 
-1. Abre [**http://localhost:4321**](http://localhost:4321/) en tu navegador para ver el resultado 🚀
+## 🧞 Comandos Disponibles
 
+| Comando | Descripción |
+| :--- | :--- |
+| `pnpm dev` | Inicia el entorno de desarrollo con Hot Reload en `localhost:4321`. |
+| `pnpm build` | Ejecuta `astro check` (verificación de tipos) y compila los assets para producción en `./dist/`. |
+| `pnpm preview` | Previsualiza localmente el build generado en `./dist/`. |
 
-## 🧞 Comandos
+## 📁 Gestión de Contenido
 
-|     | Comando          | Acción                                        |
-| :-- | :--------------- | :-------------------------------------------- |
-| ⚙️  | `dev` o `start` | Lanza un servidor de desarrollo local en  `localhost:4321`.  |
-| ⚙️  | `build`          | Comprueba posibles errores y hace un empaquetado de producción en `./dist/`.      |
-| ⚙️  | `preview`        | Vista previa en local `localhost:4321` |
+La información del perfil está desacoplada del código fuente:
 
+- **Español (`/`)**: Editar [`cv.json`](cv.json).
+- **Inglés (`/en/`)**: Editar [`cv_english.json`](cv_english.json).
+- **Textos de UI**: Administrados en [`src/i18n/ui.ts`](src/i18n/ui.ts) y [`src/i18n/index.ts`](src/i18n/index.ts).
+- **Fotografía de perfil**: Ubicada en [`public/me.webp`](public/me.webp).
 
+## 📄 Créditos y Licencia
 
-## 🔑 Licencia
-
-[MIT](LICENSE.txt) - Creado por [**midudev**](https://midu.dev).
-
-
-
+- **Diseño base**: Inspirado en el diseño minimalista de [Bartosz Jarocki](https://github.com/BartoszJarocki/cv) y la plantilla inicial de [midudev](https://github.com/midudev/minimalist-portfolio-json).
+- **Licencia**: Distribuido bajo licencia [MIT](LICENSE.txt).
