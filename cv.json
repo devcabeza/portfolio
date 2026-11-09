@@ -333,7 +333,7 @@
       "inBuilding": false,
       "isActive": true,
       "description": "Automatiza el envío de correos y alertas para tus apps sin que caigan en spam ni se caiga el servidor. Configúralo en 5 minutos.",
-      "isPrivate": false,
+      "isPrivate": true,
       "highlights": ["Email", "Laravel", "Livewire", "CI/CD", "Docker"],
       "github": "https://github.com/devcabeza/sendrix",
       "url": "https://sendrix.alejandrocabeza.dev"

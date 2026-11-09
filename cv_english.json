@@ -327,7 +327,7 @@
       "name": "Sendrix",
       "inBuilding": false,
       "isActive": true,
-      "inPrivate": false,
+      "inPrivate": true,
       "description": "Full-stack platform for the resilient dispatch and automation of multi-channel notifications, featuring a reactive web dashboard for real-time analytics and a fault-tolerant backend engine.",
       "github": "https://github.com/devcabeza/sendrix",
       "highlights": ["Email", "Laravel", "Livewire", "CI/CD", "Docker"],
