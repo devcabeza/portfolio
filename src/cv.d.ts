@@ -126,10 +126,12 @@ type Language =
 interface Projects {
   name: string
   isActive: boolean
+  inBuilding?: boolean
   description: string
   highlights: Highlight
   url: string
   github?: string
+  private?: boolean
 }
 
 interface Interests {

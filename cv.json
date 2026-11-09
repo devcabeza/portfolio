@@ -330,24 +330,33 @@
   "projects": [
     {
       "name": "Sendrix",
+      "inBuilding": false,
       "isActive": true,
-      "description": "Plataforma full stack para la automatización y despacho resiliente de notificaciones multicanal, dotada de un panel web reactivo para métricas en tiempo real y un motor backend tolerante a fallos.",
+      "description": "Automatiza el envío de correos y alertas para tus apps sin que caigan en spam ni se caiga el servidor. Configúralo en 5 minutos.",
+      "isPrivate": false,
       "highlights": ["Email", "Laravel", "Livewire", "CI/CD", "Docker"],
+      "github": "https://github.com/devcabeza/sendrix",
       "url": "https://sendrix.alejandrocabeza.dev"
     },
     {
       "name": "Laravertex",
+      "inBuilding": false,
       "isActive": true,
-      "description": "Herramienta y paquete modular de código abierto para acelerar tanto la configuración de servicios backend como la integración de capas visuales reactivas en arquitecturas empresariales.",
+      "description": "Boilerplate listo para producción: lanza tu SaaS con autenticación, base de datos y panel administrativo en horas, no en meses.",
+      "isPrivate": false,
+      "github": "https://github.com/devcabeza/starter-kit",
       "highlights": ["Laravel", "Livewire", "Capacitor", "Docker", "IA"],
       "url": "https://laravertex.alejandrocabeza.dev"
     },
     {
       "name": "LaboratoryFast",
+      "inBuilding": false,
       "isActive": true,
-      "description": "Metabuscador clínico independiente para cotizar, comparar y agendar análisis de laboratorio con transparencia tarifaria y trazabilidad médica directa.",
+      "description": "Compara precios de exámenes médicos en tu ciudad y agenda tu cita en segundos sin filas ni sobreprecios.",
+      "isPrivate": true,
       "highlights": ["Examenes Medicos", "SaaS", "B2B"],
       "url": "https://laboratoryfast.com"
     }
   ]
 }
+

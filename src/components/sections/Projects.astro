@@ -1,4 +1,5 @@
 ---
+import ExternalLink from "@/icons/ExternalLink.astro"
 import GitHub from "@/icons/GitHub.astro"
 import Section from "../Section.astro"
 
@@ -13,7 +14,7 @@ const t = useTranslations(lang)
   <ul class="projects">
     {
       projects.map(
-        ({ url, description, highlights, name, isActive, github }) => (
+        ({ url, description, highlights, name, isActive, github, private: isPrivate }) => (
           <li>
             <article>
               <h3>
@@ -24,6 +25,16 @@ const t = useTranslations(lang)
                   title={t("projects.link", { name })}
                 >
                   {name}
+                </a>
+                <a
+                  class="visit no-print"
+                  href={url}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  title={t("projects.link", { name })}
+                  aria-label={t("projects.link", { name })}
+                >
+                  <ExternalLink />
                 </a>
                 {isActive && (
                   <span
@@ -47,11 +58,6 @@ const t = useTranslations(lang)
                 )}
               </h3>
               <p>{description}</p>
-              <ul class="highlights">
-                {highlights.map((highlight) => (
-                  <li>{highlight}</li>
-                ))}
-              </ul>
             </article>
           </li>
         )
@@ -91,6 +97,21 @@ const t = useTranslations(lang)
     height: 0.4375rem;
     background: var(--color-live);
     border-radius: 50%;
+  }
+
+  .visit {
+    display: inline-flex;
+    color: var(--color-muted);
+    transition: color 0.15s ease;
+  }
+
+  .visit:hover {
+    color: var(--color-accent);
+  }
+
+  .visit :global(svg) {
+    width: 0.9375rem;
+    height: 0.9375rem;
   }
 
   .source {
