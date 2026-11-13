@@ -329,7 +329,7 @@
       "isActive": true,
       "inPrivate": true,
       "description": "Full-stack platform for the resilient dispatch and automation of multi-channel notifications, featuring a reactive web dashboard for real-time analytics and a fault-tolerant backend engine.",
-      "github": "https://github.com/devcabeza/sendrix",
+      "github": "",
       "highlights": ["Email", "Laravel", "Livewire", "CI/CD", "Docker"],
       "url": "https://sendrix.alejandrocabeza.dev"
     },
@@ -345,6 +345,7 @@
     },
     {
       "name": "LaboratoryFast",
+      "inBuilding": true,
       "isActive": true,
       "inPrivate": true,
       "description": "Independent clinical search engine to quote, compare, and schedule laboratory tests with upfront pricing transparency and direct medical traceability.",

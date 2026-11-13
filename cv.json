@@ -335,7 +335,7 @@
       "description": "Automatiza el envío de correos y alertas para tus apps sin que caigan en spam ni se caiga el servidor. Configúralo en 5 minutos.",
       "isPrivate": true,
       "highlights": ["Email", "Laravel", "Livewire", "CI/CD", "Docker"],
-      "github": "https://github.com/devcabeza/sendrix",
+      "github": "",
       "url": "https://sendrix.alejandrocabeza.dev"
     },
     {
@@ -350,7 +350,7 @@
     },
     {
       "name": "LaboratoryFast",
-      "inBuilding": false,
+      "inBuilding": true,
       "isActive": true,
       "description": "Compara precios de exámenes médicos en tu ciudad y agenda tu cita en segundos sin filas ni sobreprecios.",
       "isPrivate": true,
