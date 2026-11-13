@@ -315,22 +315,24 @@ const building = getCV(lang).projects.find(({ inBuilding }) => inBuilding)
 
   @media screen and (width <= 720px) {
     header {
-      grid-template-columns: minmax(0, 1fr);
-      row-gap: 1.5rem;
+      display: flex;
+      flex-direction: column;
+      gap: 1.5rem;
     }
 
-    .info,
+    .building {
+      order: 1;
+      margin-bottom: 0;
+    }
+
     img {
-      grid-column: 1;
+      order: 2;
+      width: 4.5rem;
+      border-radius: 0.75rem;
     }
 
     .info {
-      grid-row: 2;
-    }
-
-    img {
-      width: 4.5rem;
-      border-radius: 0.75rem;
+      order: 3;
     }
   }
 
