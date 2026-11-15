@@ -186,12 +186,7 @@
     {
       "name": "MySQL",
       "level": "Advanced",
-      "keywords": [
-        "Databases",
-        "SQL",
-        "Data Storage",
-        "Backend"
-      ]
+      "keywords": ["Databases", "SQL", "Data Storage", "Backend"]
     },
     {
       "name": "Git",
@@ -201,12 +196,7 @@
     {
       "name": "GitHub",
       "level": "Advanced",
-      "keywords": [
-        "Version Control",
-        "Collaboration",
-        "Source Code",
-        "Git"
-      ]
+      "keywords": ["Version Control", "Collaboration", "Source Code", "Git"]
     },
     {
       "name": "Next.js",
@@ -267,12 +257,22 @@
     {
       "name": "Redis",
       "level": "Advanced",
-      "keywords": ["In-Memory Database", "Caching", "Key-Value Store", "Backend"]
+      "keywords": [
+        "In-Memory Database",
+        "Caching",
+        "Key-Value Store",
+        "Backend"
+      ]
     },
     {
       "name": "CI/CD",
       "level": "Advanced",
-      "keywords": ["DevOps", "Automation", "Continuous Integration", "Continuous Delivery"]
+      "keywords": [
+        "DevOps",
+        "Automation",
+        "Continuous Integration",
+        "Continuous Delivery"
+      ]
     },
     {
       "name": "Linux",
@@ -297,7 +297,12 @@
     {
       "name": "LLM",
       "level": "Advanced",
-      "keywords": ["Artificial Intelligence", "Machine Learning", "NLP", "AI Integration"]
+      "keywords": [
+        "Artificial Intelligence",
+        "Machine Learning",
+        "NLP",
+        "AI Integration"
+      ]
     }
   ],
   "languages": [
@@ -351,6 +356,15 @@
       "description": "Independent clinical search engine to quote, compare, and schedule laboratory tests with upfront pricing transparency and direct medical traceability.",
       "highlights": ["Medical Tests", "SaaS", "B2B"],
       "url": "https://laboratoryfast.com"
+    },
+    {
+      "name": "GoFastBio",
+      "inBuilding": false,
+      "isActive": true,
+      "description": "Turn your bio visits into real clicks with smart links, micro-surveys, and real-time analytics. Create it in seconds.",
+      "isPrivate": true,
+      "highlights": ["Medical Exams", "SaaS", "B2B"],
+      "url": "https://gofastbio.alejandrocabeza.dev"
     }
   ]
 }

@@ -356,6 +356,15 @@
       "isPrivate": true,
       "highlights": ["Examenes Medicos", "SaaS", "B2B"],
       "url": "https://laboratoryfast.com"
+    },
+    {
+      "name": "GoFastBio",
+      "inBuilding": false,
+      "isActive": true,
+      "description": "Convierte las visitas de tu bio en clics reales con enlaces inteligentes, micro-encuestas y analíticas en tiempo real. Créalo en segundos.",
+      "isPrivate": true,
+      "highlights": ["Examenes Medicos", "SaaS", "B2B"],
+      "url": "https://gofastbio.alejandrocabeza.dev"
     }
   ]
 }
